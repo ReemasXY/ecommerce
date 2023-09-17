@@ -1,0 +1,139 @@
+
+.links::before{
+content: "";
+position: absolute;
+width: 0;
+height: 2px;
+background-color: white;
+bottom: 0;
+transition: 0.2s width linear;
+}
+
+.links:hover::before{
+    width: 100%; 
+}
+
+.img{
+    height: 85%;
+    object-fit: cover;
+}
+.colgap{
+    row-gap: 5px;
+}
+
+.card-responsive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: -20px; */
+
+}
+@media screen and (max-width:766px)
+{
+.maintain{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    min-height: 400px;
+}
+
+.maintain img{
+    height: 100%;
+    display: none;
+}
+}
+.featured{
+    box-sizing: border-box;
+}
+ .imgh{
+height: 250px;
+    object-fit: contain;
+}
+
+.sty{
+    transform: translate(-30px, 11px) rotate(-45deg) ; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    z-index:90;
+    width: 7rem;
+    height: 1.7rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.gif{
+    height: 20px;
+    width: 20px;
+}
+.background-image::before, .bgimg::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1 ;
+    background-position: top;
+    background-image: url("https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b17.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgimg::before{
+        background-image: url("summer.jpeg");
+}
+.min-height
+{
+    min-height: 380px;
+}
+.link-secondary , footer .row a{
+    text-decoration: none;
+    color: white !important;
+}
+li{
+    list-style: none;
+    color: white;
+}
+.list-group-item{
+    border: none;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.category{
+position: sticky;
+left: 0;
+top: 56px;
+overflow-y: scroll;
+height: calc(100vh - 56px);
+
+/* padding-bottom: 20px !important; */
+}
+nav{
+    background-color: white !important;
+}
+.product .row .filter{
+    display: none ;  
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.width{
+    width: 100vw !important ;
+}
+@media screen and (max-width:1000px)
+{
+    .category{
+        top: 56px;
+        position:fixed;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        z-index: 100;
+        height: 100vh;
+        padding: 0;
+        padding-bottom: 56px;
+        /* margin-top: 56px; */
+        width: 0 ;
+        transition: width 0.3s;
+        
+    } 
+.product .row .filter{
+    display: block;
+}
+}
